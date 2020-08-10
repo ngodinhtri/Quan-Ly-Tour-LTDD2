@@ -18,8 +18,6 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentTransaction;
 
 import com.example.projectgroup2.Adapter.AdapterPhieuDK;
 import com.example.projectgroup2.Database.DB_PhieuDK;
@@ -27,7 +25,7 @@ import com.example.projectgroup2.R;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btn_DKTour,btn_DKCustomer;
+    Button btn_DKTour,btn_DKCustomer,btn_ThongKe;
     ListView lv_PDK;
     DB_PhieuDK db_phieuDK;
     ImageButton btn_Create;
@@ -78,6 +76,7 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
     public void setControl(){
+        btn_ThongKe = findViewById(R.id.btn_ThongKe);
         btn_DKTour = findViewById(R.id.btn_DKTour);
         btn_DKCustomer = findViewById(R.id.btn_DKCustomer);
         lv_PDK = findViewById(R.id.lv_PDK);
@@ -91,7 +90,6 @@ public class MainActivity extends AppCompatActivity {
     }
     public void handleEvent(){
         khoiTao();
-
         btn_DKTour.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -133,6 +131,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this,B1TaoPhieuDK.class);
+                startActivity(intent);
+            }
+        });
+        btn_ThongKe.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,ViewThongKe.class);
                 startActivity(intent);
             }
         });

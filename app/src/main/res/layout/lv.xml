@@ -7,16 +7,27 @@
     android:layout_height="match_parent">
 
     <TextView
+        android:id="@+id/textView26"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:text="@string/s_phi_u"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <TextView
         android:id="@+id/item"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:paddingTop="5dp"
         android:paddingBottom="5dp"
         android:text="@string/textview"
         android:textColor="#000000"
-        android:textSize="18dp"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 </LinearLayout>

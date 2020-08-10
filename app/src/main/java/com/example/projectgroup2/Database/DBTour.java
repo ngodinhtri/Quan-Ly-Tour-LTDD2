@@ -40,6 +40,34 @@ public class DBTour {
                 dbHelper.getTableTour().get(1) + " DESC");
         return cursor;
     }
+//
+        public Cursor layTatCaDuLieuByTour(int ma) {
+            String[] cot = new String[dbHelper.getTableTour().size()];
+            for (int i = 0; i < dbHelper.getTableTour().size(); i++){
+                cot[i] = dbHelper.getTableTour().get(i);
+            }
+
+            Cursor cursor = null;
+            String sql = "SELECT * FROM DMTOUR WHERE kc_MaTour = " + ma;
+            cursor = database.rawQuery(sql,null);
+            return cursor;
+        }
+        public ArrayList<QLTour> getAllTourByTour(int ma){
+            ArrayList<QLTour> QLTours = new ArrayList<>();
+            Log.e("getAllSV: ", String.valueOf(QLTours.size()));
+            Cursor cursor = layTatCaDuLieuByTour(ma);
+            while (cursor.moveToNext()){
+                QLTour qlTour = new QLTour();
+                qlTour.setMaTour( Integer.parseInt(cursor.getString(0)));
+                qlTour.setLoTrinh(cursor.getString(1));
+                qlTour.setHanhTrinh(cursor.getString(2));
+                qlTour.setGiaTour(Integer.parseInt(cursor.getString(3)));
+                QLTours.add(qlTour);
+
+            }
+            return QLTours;
+        }
+//
     public ArrayList<QLTour> getAllTour(){
         ArrayList<QLTour> QLTours = new ArrayList<>();
         Log.e("getAllSV: ", String.valueOf(QLTours.size()));
@@ -105,15 +133,18 @@ public class DBTour {
         }
         return QLTours;
     }
+//
+
+//
     public Cursor timkiemPhieuDK(String searchValue)
     {
         String[] cot = new String[dbHelper.getTableTour().size()];
         for (int i = 0; i < dbHelper.getTableTour().size(); i++){
             cot[i] = dbHelper.getTableTour().get(i);
         }
-        String selection = "LoTrinh LIKE ? OR HanhTrinh LIKE ? OR GiaTour LIKE ? ";
+        String selection = "LoTrinh LIKE ? OR HanhTrinh LIKE ? OR GiaTour LIKE ? OR kc_MaTour LIKE ?";
         String[] selectionArgs = new String[]{
-                "%" + String.valueOf(searchValue)+ "%", "%" + String.valueOf(searchValue)+ "%","%" + String.valueOf(searchValue)+ "%"
+                "%" + String.valueOf(searchValue)+ "%", "%" + String.valueOf(searchValue)+ "%","%" + String.valueOf(searchValue)+ "%","%" + String.valueOf(searchValue)+ "%"
         };
         Cursor cursor = null;
         cursor = database.query("DMTOUR", cot, selection, selectionArgs, null, null,

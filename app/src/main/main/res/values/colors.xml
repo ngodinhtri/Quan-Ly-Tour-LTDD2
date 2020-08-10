@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#012E52</color>
+    <color name="colorPrimaryDark">#4DD0E1</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="trangXanh">#F0FAEF</color>
+    <color name="hong">#F99B9B</color>
+    <color name="mauDo">#E43A47</color>
+    <color name="lamDam">#457B9D</color>
+    <color name="lamNhat">#74BDE0</color>
+    <color name="cam">#F8D49A</color>
+    <color name="vien">#012E52</color>
+    <color name="nen">#4DD0E1</color>
+</resources>

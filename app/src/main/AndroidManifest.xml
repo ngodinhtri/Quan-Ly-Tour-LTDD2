@@ -13,7 +13,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Views.LoadingScreen"
+        <activity android:name=".Views.ViewThongKe"></activity>
+        <activity
+            android:name=".Views.LoadingScreen"
             android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -29,9 +31,7 @@
         <activity android:name=".Views.create_customer" />
         <activity android:name=".Views.ViewCustomer" />
         <activity android:name=".Views.ViewTour" />
-        <activity android:name=".Views.MainActivity">
-
-        </activity>
+        <activity android:name=".Views.MainActivity"></activity>
     </application>
 
 </manifest>

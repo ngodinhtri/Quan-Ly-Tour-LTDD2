@@ -74,4 +74,7 @@
     <string name="btn_transfer">btn_Transfer</string>
     <string name="s_phi_u_ng_k">Số Phiếu Đăng Ký</string>
     <string name="live_to_travel">Live To Travel</string>
+    <string name="s_phi_u">Số Phiếu:</string>
+    <string name="b_n_th_ng_k">Bản Thống Kê</string>
+    <string name="th_ng_k">Thống Kê</string>
 </resources>

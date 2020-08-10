@@ -28,7 +28,6 @@ public class DB_PhieuDK {
     }
     public void close() {
         dbHelper.close();
-
     }
     public Cursor layTatCaDuLieu() {
         String[] cot = new String[dbHelper.getTablePhieuDK().size()];
@@ -42,6 +41,30 @@ public class DB_PhieuDK {
         return cursor;
     }
 
+    public Cursor layTatCaMaTour(int ma) {
+        String[] cot = new String[dbHelper.getTablePhieuDK().size()];
+        for (int i = 0; i < dbHelper.getTablePhieuDK().size(); i++){
+            cot[i] = dbHelper.getTablePhieuDK().get(i);
+        }
+        Cursor cursor = null;
+        String sql = "SELECT * FROM PHIEUDANGKY WHERE kp_MaKH = " + ma;
+        cursor = database.rawQuery(sql,null);
+        return cursor;
+    }
+    public ArrayList<QLPhieuDK> getAllMaTour(int ma){
+        ArrayList<QLPhieuDK> QLPhieuDKs = new ArrayList<>();
+        Cursor cursor = layTatCaMaTour(ma);
+        while (cursor.moveToNext()){
+            QLPhieuDK QLPDK = new QLPhieuDK();
+            QLPDK.setSoPhieu(Integer.parseInt(cursor.getString(0)));
+            QLPDK.setNgayDK(cursor.getString(1));
+            QLPDK.setMaKH(Integer.parseInt(cursor.getString(2)));
+            QLPDK.setMaTour(Integer.parseInt(cursor.getString(3)));
+            QLPDK.setSoNguoi(Integer.parseInt(cursor.getString(4)));
+            QLPhieuDKs.add(QLPDK);
+        }
+        return QLPhieuDKs;
+    }
     public ArrayList<QLPhieuDK> getAllPhieuDK (){
         ArrayList<QLPhieuDK> QLPhieuDKs = new ArrayList<>();
         Cursor cursor = layTatCaDuLieu();
