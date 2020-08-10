@@ -61,6 +61,7 @@ public class create_tour extends AppCompatActivity {
                             pt_HanhTrinh.setText("");
                             pt_GiaTour.setText("");
                             Intent intent = new Intent(create_tour.this, ViewTour.class);
+                            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
                             startActivity(intent);
                         }else
                         {

@@ -136,6 +136,7 @@ public class B1TaoPhieuDK extends AppCompatActivity {
                         db_phieuDK.them(qlPhieuDK);
                         et_SoNguoi.setText("");
                         Intent intent = new Intent(B1TaoPhieuDK.this,MainActivity.class);
+                        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
                         startActivity(intent);
                     }else
                     {

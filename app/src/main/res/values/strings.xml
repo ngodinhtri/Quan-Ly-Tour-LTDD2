@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ProjectGroup2</string>
+    <string name="app_name">Quản lý Tour</string>
     <string name="tv_Card">TextView</string>
     <string name="tv_Name">TextView</string>
     <string name="tv_Tour">TextView</string>

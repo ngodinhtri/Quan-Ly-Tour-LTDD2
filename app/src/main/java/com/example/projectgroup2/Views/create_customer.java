@@ -75,7 +75,9 @@ public class create_customer extends AppCompatActivity {
                         dbKhachHang.them(qlkh); // ad vào database
                         pt_NhapTenKH.setText(""); // clear dữ liệu Tên trong create Customer
                         pt_NhapDiaChiKH.setText("");// clear dữ liệu Địa Chỉ trong create Customer
+
                         Intent intent = new Intent(create_customer.this,ViewCustomer.class);
+                        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
                         startActivity(intent);
                     }
                     else

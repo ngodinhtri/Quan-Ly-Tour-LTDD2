@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".Views.MainActivity"
+    android:background="@color/trangXanh"
     android:weightSum="10">
 
     <TextView
@@ -52,7 +53,7 @@
     </LinearLayout>
 
     <ListView
-        android:layout_weight="7"
+        android:layout_weight="7.5"
         android:id="@+id/lv_PDK"
         android:layout_width="match_parent"
         android:layout_height="330dp"
