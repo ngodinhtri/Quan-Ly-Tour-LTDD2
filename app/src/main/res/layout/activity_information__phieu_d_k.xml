@@ -5,18 +5,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Views.Information_PhieuDK">
+    tools:context=".Views.Information_PhieuDK"
+    android:layout_marginRight="16dp"
+    android:layout_marginLeft="16dp">
 
     <TextView
         android:id="@+id/textView19"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="80dp"
         android:gravity="center"
         android:text="@string/s_a_phi_u_dk"
-        android:textColor="#000000"
-        android:textSize="24sp" />
+        android:textColor="@color/vien"
+        android:textSize="24sp"
+        android:textStyle="bold"/>
 
     <TextView
+
         android:id="@+id/textView27"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -40,12 +44,13 @@
 
         <Button
             android:id="@+id/btn_Date"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/date" />
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_calendar" />
     </LinearLayout>
 
     <TextView
+        android:layout_marginTop="20dp"
         android:id="@+id/textView28"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -59,6 +64,7 @@
         android:layout_height="wrap_content" />
 
     <TextView
+        android:layout_marginTop="20dp"
         android:id="@+id/textView32"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -72,6 +78,7 @@
         android:layout_height="wrap_content" />
 
     <TextView
+        android:layout_marginTop="20dp"
         android:id="@+id/textView33"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -95,12 +102,12 @@
         android:orientation="vertical">
 
         <ImageButton
+            android:layout_marginTop="20dp"
             android:id="@+id/img_sua"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:background="#00FFFFFF"
-            android:contentDescription="@string/sua"
-            android:scaleType="fitXY"
-            app:srcCompat="@drawable/update" />
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="fitCenter"
+            android:background="@drawable/ic_update"
+            android:contentDescription="@string/s_a"/>
     </LinearLayout>
 </LinearLayout>

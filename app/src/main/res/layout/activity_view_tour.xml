@@ -10,10 +10,12 @@
     <TextView
         android:id="@+id/textView3"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="80dp"
         android:gravity="center"
         android:text="@string/qu_n_l_tour"
-        android:textSize="24sp" />
+        android:textColor="@color/vien"
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
     <ListView
         android:id="@+id/lv_Tour"
@@ -22,11 +24,13 @@
         android:layout_weight="1" />
 
     <ImageButton
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
         android:id="@+id/btn_createTour"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#00FFFFFF"
-        android:contentDescription="@string/btn_createTour"
-        app:srcCompat="@drawable/add" />
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:background="@drawable/ic_add"
+        android:contentDescription="@string/btn_createTour" />
 
 </LinearLayout>

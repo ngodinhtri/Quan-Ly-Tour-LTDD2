@@ -5,16 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Views.create_customer">
+    tools:context=".Views.create_customer"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp">
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="80dp"
         android:gravity="center"
         android:text="@string/kh_i_t_o_kh_ch_h_ng"
-        android:textColor="#000000"
-        android:textSize="18sp" />
+        android:textColor="@color/vien"
+        android:textSize="24sp"
+        android:textStyle="bold"/>
 
     <TextView
         android:id="@+id/textView5"
@@ -34,6 +37,7 @@
         android:inputType="textPersonName" />
 
     <TextView
+        android:layout_marginTop="20dp"
         android:id="@+id/textView6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -51,37 +55,42 @@
         android:inputType="textPersonName" />
 
     <ImageView
+        android:layout_marginTop="20dp"
         android:id="@+id/img_KH"
         android:layout_width="match_parent"
-        android:layout_height="256dp"
+        android:layout_height="200dp"
         android:contentDescription="@string/imgKH"
-        android:scaleType="fitXY"
-        app:srcCompat="@drawable/emptypicture" />
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/ic_customer" />
 
     <LinearLayout
+        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="fill_vertical"
+        android:gravity="center"
         android:orientation="horizontal">
 
         <Button
             android:id="@+id/btn_ThemImg"
+            android:background="@drawable/custom_button"
             style="@android:style/Widget.Button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/th_m_img" />
+            android:text="@string/th_m_img"
+            android:layout_marginRight="30dp"/>
 
         <Button
             android:id="@+id/btn_HuyImg"
+            android:background="@drawable/custom_button"
             style="@android:style/Widget.Button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_marginLeft="30dp"
             android:text="@string/h_y_img" />
     </LinearLayout>
 
     <LinearLayout
+        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
@@ -89,8 +98,8 @@
 
         <Button
             android:id="@+id/btn_Save"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/save" />
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/ic_confirm" />
     </LinearLayout>
 </LinearLayout>

@@ -11,10 +11,12 @@
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="80dp"
         android:gravity="center"
         android:text="@string/ng_k_kh_ch_h_ng"
-        android:textSize="24sp" />
+        android:textColor="@color/vien"
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
     <ListView
         android:id="@+id/lv_Customer"
@@ -23,11 +25,12 @@
         android:layout_weight="1" />
 
     <ImageButton
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
         android:id="@+id/btn_createKH"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:layout_gravity="center"
-        android:background="#00FFFFFF"
-        android:contentDescription="@string/btn_createTour"
-        app:srcCompat="@drawable/add" />
+        android:background="@drawable/ic_add"
+        android:contentDescription="@string/btn_createTour" />
 </LinearLayout>

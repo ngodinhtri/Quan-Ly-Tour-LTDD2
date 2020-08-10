@@ -3,23 +3,27 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".Views.B1TaoPhieuDK">
 
     <TextView
         android:id="@+id/textView20"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="80dp"
         android:gravity="center"
         android:text="@string/t_o_phi_u_ng_k"
-        android:textColor="#000000"
-        android:textSize="18sp"
+        android:textColor="@color/vien"
+        android:textSize="24sp"
+        android:textStyle="bold"
         tools:layout_editor_absoluteX="139dp"
         tools:layout_editor_absoluteY="20dp" />
 
+
     <TextView
         android:id="@+id/textView21"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/ng_y_ng_k"
@@ -27,6 +31,8 @@
         android:textSize="18sp" />
 
     <LinearLayout
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
         android:id="@+id/Liner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -42,12 +48,15 @@
 
         <Button
             android:id="@+id/btn_Date"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/date" />
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_calendar" />
     </LinearLayout>
 
     <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
         android:id="@+id/textView22"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -56,11 +65,16 @@
         android:textSize="18sp" />
 
     <Spinner
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
         android:id="@+id/sp_MaKH"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
     <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
         android:id="@+id/textView25"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -69,11 +83,16 @@
         android:textSize="18sp" />
 
     <Spinner
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
         android:id="@+id/sp_MaTour"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
     <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
         android:id="@+id/textView24"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -82,6 +101,8 @@
         android:textSize="18sp" />
 
     <EditText
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
         android:id="@+id/et_SoNguoi"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -91,9 +112,11 @@
         android:inputType="number" />
 
     <Button
+        android:layout_marginTop="20dp"
         android:id="@+id/btn_QuaBuoc"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/qua_b_c_k_t_th_c" />
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/ic_confirm"
+        android:layout_gravity="center"/>
 
 </LinearLayout>

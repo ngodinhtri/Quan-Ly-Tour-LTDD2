@@ -7,8 +7,8 @@
     <string name="phi_u_ng_k">Phiếu Đăng Ký</string>
     <string name="img_btn_create">img_PDK</string>
     <string name="img_btn_delete">Delete</string>
-    <string name="ng_k_tour">Đăng Ký Tour</string>
-    <string name="ng_k_kh">Đăng Ký KH</string>
+    <string name="ng_k_tour">Tour</string>
+    <string name="ng_k_kh">Khách Hàng</string>
     <string name="qu_n_l_tour">Quản Lý Tour</string>
     <string name="btn_createTour">btn_createTour</string>
     <string name="h_nh_tr_nh">Hành Trình</string>
@@ -73,4 +73,5 @@
     <string name="s_a_phi_u_dk">Sửa Phiếu DK</string>
     <string name="btn_transfer">btn_Transfer</string>
     <string name="s_phi_u_ng_k">Số Phiếu Đăng Ký</string>
+    <string name="live_to_travel">Live To Travel</string>
 </resources>

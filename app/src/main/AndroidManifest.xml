@@ -13,7 +13,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Views.Information_PhieuDK"></activity>
+        <activity android:name=".Views.LoadingScreen"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Views.Information_PhieuDK" />
         <activity android:name=".Views.B1TaoPhieuDK" />
         <activity android:name=".Views.Information_Tour" />
         <activity android:name=".Views.Information_customer" />
@@ -22,11 +30,7 @@
         <activity android:name=".Views.ViewCustomer" />
         <activity android:name=".Views.ViewTour" />
         <activity android:name=".Views.MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 

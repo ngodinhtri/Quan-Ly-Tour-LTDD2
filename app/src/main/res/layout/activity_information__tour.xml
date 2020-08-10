@@ -5,16 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Views.Information_Tour">
+    tools:context=".Views.Information_Tour"
+    android:layout_marginRight="16dp"
+    android:layout_marginLeft="16dp">
 
     <TextView
         android:id="@+id/textView12"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="80dp"
         android:gravity="center"
         android:text="@string/th_ng_tin_tour"
-        android:textColor="#020202"
-        android:textSize="18sp" />
+        android:textColor="@color/vien"
+        android:textSize="24sp"
+        android:textStyle="bold"/>
 
     <TextView
         android:id="@+id/textView15"
@@ -34,6 +37,7 @@
         android:inputType="textPersonName" />
 
     <TextView
+        android:layout_marginTop="20dp"
         android:id="@+id/textView16"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -52,6 +56,7 @@
 
     <TextView
         android:id="@+id/textView17"
+        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/gi_tour"
@@ -90,11 +95,12 @@
         android:orientation="vertical">
 
         <ImageButton
+            android:layout_marginTop="20dp"
             android:id="@+id/btn_Sua"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="#00000000"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/ic_update"
             android:contentDescription="@string/s_a"
-            app:srcCompat="@drawable/update" />
+            />
     </LinearLayout>
 </LinearLayout>
