@@ -52,7 +52,7 @@
     </LinearLayout>
 
     <ListView
-        android:layout_weight="7.5"
+        android:layout_weight="7"
         android:id="@+id/lv_PDK"
         android:layout_width="match_parent"
         android:layout_height="330dp"

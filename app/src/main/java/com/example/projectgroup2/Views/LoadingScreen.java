@@ -1,7 +1,6 @@
 package com.example.projectgroup2.Views;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.content.Intent;
 import android.graphics.drawable.AnimationDrawable;
@@ -19,8 +18,7 @@ import com.example.projectgroup2.R;
 public class LoadingScreen extends AppCompatActivity {
     ImageView imgLoading;
     Button btnLoadScreen;
-    AnimationDrawable anim1, anim2;
-    ConstraintLayout constraintLayout;
+    AnimationDrawable anim;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,17 +26,10 @@ public class LoadingScreen extends AppCompatActivity {
         setContentView(R.layout.activity_loading_screen);
         setcontrol();
         setEvent();
-        
-
-        constraintLayout.setBackgroundResource(R.drawable.background_loading);
-        if(imgLoading == null) throw new AssertionError();
-        anim2 = (AnimationDrawable) constraintLayout.getBackground();
-        anim2.start();
-
         imgLoading.setBackgroundResource(R.drawable.animation_loadinng);
         if(imgLoading == null) throw new AssertionError();
-        anim1 = (AnimationDrawable) imgLoading.getBackground();
-        anim1.start();
+        anim = (AnimationDrawable) imgLoading.getBackground();
+        anim.start();
     }
 
     private void setEvent() {
@@ -67,7 +58,6 @@ public class LoadingScreen extends AppCompatActivity {
     }
 
     private void setcontrol() {
-        constraintLayout = (ConstraintLayout) findViewById(R.id.loadingScreen);
         imgLoading = (ImageView) findViewById(R.id.imgViewLoading);
         btnLoadScreen = (Button) findViewById(R.id.btnLoadScreen);
     }
